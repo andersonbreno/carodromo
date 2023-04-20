@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno</title>
+</head>
+<body>
+
+    <h1>Aluno</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Série</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="{% url 'aluno_list' %}">{{ aluno.nome }}</a></td>
+                <td>{{ aluno.serie }}</td>
+                {% comment %} <td>{{ aluno.matricula }}</td> {% endcomment %}
+                <td><img src="{{ aluno.imagem.url }}" width="120" height="120"></td>
+            </tr>
+        </tbody>
+    </table>
+    <section>
+        <button><a href="{% url 'aluno_list' %}">Voltar</a></button>
+    </section>
+</body>
+</html>
