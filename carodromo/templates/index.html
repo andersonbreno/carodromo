@@ -1,5 +1,20 @@
-<h1>Bem vindo(a) ao Caródromo da Bilingue</h1>
+{% extends 'base.html' %}
+{% load static %}
 
-<div>
-    <h3><a href="http://127.0.0.1:8000/aluno_6ano/">Acessar 6º Ano</a></h3>
+{% block voltar %}
+{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center p-5">Bem vindo(a) ao Caródromo da Bilíngue</h2>
+<div class="m-2">
+    <h2><a href="http://127.0.0.1:8000/aluno_6ano/" class="btn btn-primary">Acessar 6º Ano</a></h2>
+    <h2><a href="http://127.0.0.1:8000/aluno_7ano/" class="btn btn-primary">Acessar 7º Ano</a></h2>
+    <h2><a href="http://127.0.0.1:8000/aluno_8ano/" class="btn btn-primary">Acessar 8º Ano</a></h2>
+    <h2><a href="http://127.0.0.1:8000/aluno_9ano/" class="btn btn-primary">Acessar 9º Ano</a></h2>
 </div>
+</body>
+</html>
+{% endblock %}
+
+

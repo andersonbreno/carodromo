@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <h2 class="text-center p-5">Alunos 6º Ano</h2>
+    <h2 class="text-center p-5">Alunos 7º Ano</h2>
     <table class="table">
         <thead>
             <tr>
@@ -11,10 +11,10 @@
             </tr>
         </thead>
         <tbody>
-            {% if aluno_6ano %}
+            {% if aluno_7ano %}
             <tr>
             </tr>
-                {% for aluno in aluno_6ano %}
+                {% for aluno in aluno_7ano %}
                     <tr>
                         <td><a href="{% url 'aluno' aluno.id %}">{{ aluno.nome }}</a></td>
                         {% comment %} <td>{{ aluno.serie }}</td> {% endcomment %}
@@ -26,4 +26,3 @@
         </tbody>
     </table>
 {% endblock %}
-
