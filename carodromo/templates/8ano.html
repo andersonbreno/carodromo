@@ -1,28 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
 {% block content %}
     <h2 class="text-center p-5">Alunos 8º Ano</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th class="mt-3">Foto</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% if aluno_8ano %}
-            <tr>
-            </tr>
-                {% for aluno in aluno_8ano %}
-                    <tr>
-                        <td><a href="{% url 'aluno' aluno.id %}">{{ aluno.nome }}</a></td>
-                        {% comment %} <td>{{ aluno.serie }}</td> {% endcomment %}
-                        <td><img src="{{ aluno.imagem.url }}" width="120" height="120"></td>
-                    </tr>
-                {% endfor %}
-            {% endif %}
-
-        </tbody>
-    </table>
+    <div class="row">
+        {% if aluno_8ano %}
+            {% for aluno in aluno_8ano %}
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="{{ aluno.imagem.url }}" class="card-img-top custom-img" alt="Foto do Aluno">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{% url 'aluno' aluno.id %}">{{ aluno.nome }}</a></h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
 {% endblock %}
