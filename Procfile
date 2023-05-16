@@ -1,1 +1,1 @@
-web: gunicorn carodromo.wsgi --log-file - 
+web: gunicorn carodromo:app
