@@ -5,7 +5,7 @@
 {% block content %}
     <h2 class="text-center p-5">Alunos 6º Ano</h2>
     <div class="row">
-        <!-- {% if aluno_6ano %} -->
+        {% if aluno_6ano %}
             {% for aluno in aluno_6ano %}
                 <div class="col-md-4">
                     <div class="card mb-3">
@@ -16,6 +16,6 @@
                     </div>
                 </div>
             {% endfor %}
-        <!-- {% endif %} -->
+        {% endif %}
     </div>
 {% endblock %}
