@@ -31,7 +31,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['web-production-ac35.up.railway.app']
+ALLOWED_HOSTS = ['web-production-ac35.up.railway.app/*']
 
 
 # Application definition
