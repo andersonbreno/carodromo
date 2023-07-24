@@ -1,6 +1,8 @@
 # Caródromo
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/andersonbreno/carodromo/blob/main/LICENSE) 
 
+## Projeto em Andamento 
+
 # Sobre o projeto
 
 Este projeto está sendo desenvolvido a pedido da Diretoria da Escola Municipal Bilingue Dom José Maria Pires, integrante da rede municipal de João Pessoa. A proposta inicial surgiu para atender a uma necessidade expressa por essa instituição: facilitar a identificação dos alunos durante reuniões e conselhos escolares.
